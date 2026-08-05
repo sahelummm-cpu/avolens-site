@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AvoLens — AI Calorie Counter, Macro Tracker & GLP-1 Log</title>
+<meta name="description" content="AvoLens is an AI calorie counter that reads your plate. Snap a photo for instant calories, protein, carbs and fat — plus barcode, nutrition label and voice logging, weight trends, and optional GLP-1 tracking. Works offline.">
+<link rel="canonical" href="https://sahelummm-cpu.github.io/avolens-site/">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon-512.png">
+<link rel="stylesheet" href="assets/style.css">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AvoLens">
+<meta property="og:title" content="AvoLens — AI Calorie Counter, Macro Tracker & GLP-1 Log">
+<meta property="og:description" content="Snap your food for instant calories and macros. Track weight, protein and GLP-1. Works offline, no ads, no trackers.">
+<meta property="og:url" content="https://sahelummm-cpu.github.io/avolens-site/">
+<meta property="og:image" content="https://sahelummm-cpu.github.io/avolens-site/assets/og.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AvoLens — AI Calorie Counter, Macro Tracker & GLP-1 Log">
+<meta name="twitter:description" content="Snap your food for instant calories and macros. Track weight, protein and GLP-1. Works offline, no ads, no trackers.">
+<meta name="twitter:image" content="https://sahelummm-cpu.github.io/avolens-site/assets/og.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "AvoLens",
+  "alternateName": "AvoLens: AI Calorie Counter",
+  "applicationCategory": "HealthApplication",
+  "applicationSubCategory": "Calorie Counter",
+  "operatingSystem": "Android 8.0+, iOS 16+",
+  "url": "https://sahelummm-cpu.github.io/avolens-site/",
+  "image": "https://sahelummm-cpu.github.io/avolens-site/assets/icon-512.png",
+  "description": "An AI calorie counter and macro tracker. Log meals by photo, barcode, nutrition label or voice; track weight, protein and water; optional GLP-1 medication logging. Runs fully offline with no ads and no tracking SDKs.",
+  "featureList": [
+    "AI photo calorie and macro estimation",
+    "Barcode scanning with portion adjustment",
+    "Nutrition label transcription",
+    "Voice meal logging",
+    "Weight trend with goal projection",
+    "GLP-1 medication tracking (optional)",
+    "Home screen widgets",
+    "Health Connect and Apple Health sync",
+    "CSV export",
+    "Offline-first, account optional"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free to download. AvoLens Pro is an optional auto-renewing subscription."
+  },
+  "isAccessibleForFree": true
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does AvoLens work offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AvoLens runs fully offline with your data stored on your device. An account is optional and only adds cloud sync and the AI Coach. AI photo, label and voice logging need a connection because the analysis runs on a server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are my meal photos stored anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A meal photo is sent to the AI provider, analysed, and the result is returned. AvoLens does not save the photo to any server or database. Progress photos are different — those are yours to keep, and are stored in a private bucket only you can read when you are signed in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does AvoLens track me or show ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. There is no analytics SDK, no advertising SDK and no attribution SDK anywhere in the app. Nothing about your usage is sold or shared with third parties for marketing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AvoLens a medical device?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. AvoLens is a tracking tool. Nutrition estimates, medication logs and AI coach replies are informational and can be wrong. They are not medical advice and are not a substitute for your doctor or pharmacist. Never start, stop or change a dose based on this app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I delete my account and data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the app, open Settings, then Data & privacy, then Delete account. That removes your account and its data and wipes local state. You can also request deletion from the web without opening the app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does AvoLens Pro include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The free tier includes three AI photo scans a day, unlimited manual entry, food database search, weight and BMI, trends, GLP-1 tracking, water, widgets and Health Connect sync. Pro adds unlimited AI scans, barcode, nutrition label and voice logging, and the AI Coach. It is an auto-renewing subscription billed through your app store and can be cancelled there at any time."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/logo.png" alt="" width="28" height="28">AvoLens</a>
+    <nav class="site-nav">
+      <a href="privacy/">Privacy</a>
+      <a href="terms/">Terms</a>
+      <a href="support/">Support</a>
+      <a href="delete-account/">Delete data</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>The AI calorie counter that reads your plate</h1>
+  <p class="lede">Point your camera at a meal and AvoLens logs calories, protein, carbs and fat
+  in seconds — no searching a food database, no typing ingredients, no kitchen scale.</p>
+
+  <div class="btn-row">
+    <a class="btn" href="https://play.google.com/store/apps/details?id=app.avolens.mobile">Get it on Google Play</a>
+    <a class="btn secondary" href="#faq">Common questions</a>
+  </div>
+  <p class="small muted">Free to download. AvoLens Pro is optional.</p>
+
+  <h2>Four ways to log a meal</h2>
+  <ul class="features">
+    <li><b>Photo</b><span>Snap the plate and get a full nutrition breakdown plus a 1–10 health score.</span></li>
+    <li><b>Barcode</b><span>Scan any packaged product and adjust it to the portion you actually ate.</span></li>
+    <li><b>Nutrition label</b><span>Photograph a nutrition facts panel and AvoLens transcribes the exact per-serving values.</span></li>
+    <li><b>Voice</b><span>Say “two eggs and toast” and it becomes a logged meal.</span></li>
+  </ul>
+  <p>Every AI estimate is editable before you log it. You always have the final say on what
+  goes in your food diary.</p>
+
+  <h2>A calorie tracker that understands GLP-1</h2>
+  <p>If you take a GLP-1 medication, AvoLens tracks it alongside your nutrition instead of
+  making you run two apps. The feature is completely optional and stays hidden unless you
+  turn it on.</p>
+  <ul>
+    <li>Log injections or oral doses using the published dose ladder for your medication</li>
+    <li>Dose reminders that follow your own schedule, with a missed-dose follow-up</li>
+    <li>Injection site rotation suggestions</li>
+    <li>Medication level over time, with injection markers on your weight chart</li>
+    <li>Adherence streak across your last 8 cycles</li>
+    <li>Protein tracking, which matters more on a GLP-1</li>
+  </ul>
+  <p class="small muted">Supports semaglutide, tirzepatide, liraglutide, dulaglutide and
+  exenatide, including compounded and telehealth prescriptions. AvoLens is an independent
+  app and is not affiliated with, endorsed by, or sponsored by any pharmaceutical
+  manufacturer.</p>
+
+  <h2>Your plan, your numbers</h2>
+  <p>Daily calorie and macro targets are calculated with the Mifflin-St Jeor equation from
+  your body stats and activity level — and every number stays editable.</p>
+  <ul>
+    <li>Pick your pace and see the projected date before you commit</li>
+    <li>Roll over up to 200 unused calories to the next day</li>
+    <li>Add calories burned back into your daily goal</li>
+    <li>13 diets: balanced, whole-food, Mediterranean, flexitarian, pescatarian, vegetarian,
+    vegan, high protein, low carb, keto, dairy-free, gluten-free and halal</li>
+  </ul>
+
+  <h2>Track weight and progress</h2>
+  <ul>
+    <li><span class="dot p"></span>Smoothed weight trend with a goal projection</li>
+    <li><span class="dot c"></span>BMI, body measurements, and progress photos with a before/after view</li>
+    <li><span class="dot f"></span>Protein and calorie adherence, like “hit protein 5/7 days”</li>
+    <li><span class="dot w"></span>Logging heatmap, streaks and awards</li>
+    <li><span class="dot p"></span>Water, fiber, sodium and sugar</li>
+    <li><span class="dot c"></span>Health Connect and Apple Health sync for steps, workouts and active energy</li>
+    <li><span class="dot f"></span>CSV export of your whole log, any time you want it</li>
+  </ul>
+
+  <h2>Built to stay out of your data</h2>
+  <div class="card">
+    <h3>No ads. No trackers. No analytics SDK.</h3>
+    <p>AvoLens ships with no advertising, analytics or attribution library of any kind. The
+    app runs fully offline with your data on your device; an account is optional and only
+    adds cloud sync and the AI Coach. You can export everything to CSV, or
+    <a href="delete-account/">delete your account and all its data</a> in one tap.</p>
+  </div>
+
+  <h2 id="faq">Common questions</h2>
+
+  <details>
+    <summary>Does AvoLens work offline?</summary>
+    <p>Yes. AvoLens runs fully offline with your data stored on your device. An account is
+    optional and only adds cloud sync and the AI Coach. AI photo, label and voice logging
+    need a connection, because the analysis runs on a server.</p>
+  </details>
+
+  <details>
+    <summary>Are my meal photos stored anywhere?</summary>
+    <p>No. A meal photo is sent to the AI provider, analysed, and the result comes back.
+    AvoLens does not save that photo to any server or database. Progress photos are
+    different — those are yours to keep, and are stored in a private bucket only you can
+    read while you are signed in. Full detail in the <a href="privacy/">Privacy Policy</a>.</p>
+  </details>
+
+  <details>
+    <summary>Does AvoLens track me or show ads?</summary>
+    <p>No. There is no analytics SDK, no advertising SDK and no attribution SDK anywhere in
+    the app. Nothing about your usage is sold or shared with third parties for marketing.</p>
+  </details>
+
+  <details>
+    <summary>Is AvoLens a medical device?</summary>
+    <p>No. AvoLens is a tracking tool. Nutrition estimates, medication levels and coach
+    replies are informational and can be wrong. They are not medical advice and are no
+    substitute for your doctor or pharmacist. Never start, stop or change a dose based on
+    this app.</p>
+  </details>
+
+  <details>
+    <summary>How do I delete my account and data?</summary>
+    <p>In the app: <strong>Settings → Data &amp; privacy → Delete account</strong>. That
+    removes your account and its data, and wipes local state. You can also
+    <a href="delete-account/">request deletion from the web</a> without opening the app.</p>
+  </details>
+
+  <details>
+    <summary>What does AvoLens Pro include?</summary>
+    <p>Free includes 3 AI photo scans a day, unlimited manual entry, food database search,
+    weight and BMI, trends, GLP-1 tracking, water, widgets and Health Connect sync. Pro adds
+    unlimited AI scans, barcode, nutrition label and voice logging, and the AI Coach. It is
+    an auto-renewing subscription offered monthly or annually and billed through your app
+    store. Cancel any time in your store subscription settings.</p>
+  </details>
+
+  <div class="callout">
+    <strong>Health disclaimer</strong>
+    AvoLens is a tracking tool, not a medical device. Nutrition estimates, medication levels
+    and coach replies are informational and can be wrong. They are not medical advice and
+    are no substitute for your doctor or pharmacist. Never start, stop or change a dose
+    based on this app.
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav>
+      <a href="privacy/">Privacy Policy</a>
+      <a href="terms/">Terms of Service</a>
+      <a href="support/">Support</a>
+      <a href="delete-account/">Delete my data</a>
+    </nav>
+    <p>© 2026 AvoLens. AvoLens is an independent app and is not affiliated with, endorsed by,
+    or sponsored by any pharmaceutical manufacturer.</p>
+  </div>
+</footer>
+
+</body>
+</html>

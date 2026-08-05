@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sahelummm-cpu.github.io/avolens-site/sitemap.xml
