@@ -22,26 +22,7 @@ privacy policy claims about the app.
 `robots.txt` and `sitemap.xml` are at the root. `404.html` uses absolute paths (GitHub Pages
 serves it from any depth) and is the only file that hardcodes the `/avolens-site/` base path.
 
-## ⚠️ Fill these in before submitting to Google Play
 
-Three placeholders appear across the legal pages, rendered with a pink dashed underline so
-they are impossible to miss on the live site. **Replace every one before you use these URLs
-in a store submission** — a policy naming "[LEGAL NAME]" is not a valid policy.
-
-| Placeholder | What to put | Files |
-| --- | --- | --- |
-| `[LEGAL NAME]` | Your name, or your registered company name. Must match the developer name on your Play Console account. | `privacy/index.html` (§1, §15), `terms/index.html` (§1, §21) |
-| `[COUNTRY / JURISDICTION]` | Where you are based / whose law governs the Terms. | `privacy/index.html` (§1, §15), `terms/index.html` (§19, §21) |
-| `[CONTACT EMAIL]` | **An inbox you actually receive.** Used for privacy requests, deletion requests and support. | `privacy/index.html` (§1, §10, §12, §15), `terms/index.html` (§21), `support/index.html`, `delete-account/index.html` (×3 — including the `mailto:` link and the copy-paste template) |
-
-Find them all:
-
-```bash
-grep -rn "\[LEGAL NAME\]\|\[COUNTRY / JURISDICTION\]\|\[CONTACT EMAIL\]" .
-```
-
-Note `support@avolens.app` only works if you own `avolens.app`. If you don't, use a real
-address you control.
 
 ## Moving to a custom domain
 
