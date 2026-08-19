@@ -95,7 +95,7 @@ complete list of data that can be transmitted off your device, and what triggers
     <tr>
       <td>Email address and display name</td>
       <td>Only if you create an account</td>
-      <td>Supabase (auth)</td>
+      <td>AWS Cognito (auth)</td>
       <td>Until you delete the account</td>
     </tr>
     <tr>
@@ -236,7 +236,7 @@ providers, each processing data only on our instructions:</p>
 <table>
   <thead><tr><th>Provider</th><th>What it handles</th><th>Notes</th></tr></thead>
   <tbody>
-    <tr><td>Supabase</td><td>Accounts, profile sync, progress photos, usage counters</td><td>Encrypted in transit (HTTPS) and at rest</td></tr>
+    <tr><td>AWS (Amazon Web Services)</td><td>Accounts, profile sync, progress photos, usage counters</td><td>Encrypted in transit (HTTPS) and at rest</td></tr>
     <tr><td>Google (Gemini API)</td><td>AI analysis of meal photos, labels, voice text, coach messages, meal plans and recipes</td><td>Transient processing; not stored by us; not used for model training</td></tr>
     <tr><td>RevenueCat</td><td>Subscription status</td><td>Only if you subscribe</td></tr>
     <tr><td>Google Play / Apple</td><td>Payment processing</td><td>We never see your card details</td></tr>
