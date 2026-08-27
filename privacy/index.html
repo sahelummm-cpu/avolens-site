@@ -25,8 +25,8 @@
   "url": "https://avolens.voltgenix-llc.com/privacy/",
   "description": "How the AvoLens calorie tracking app handles your data.",
   "inLanguage": "en",
-  "datePublished": "2026-08-20",
-  "dateModified": "2026-08-20",
+  "datePublished": "2026-08-27",
+  "dateModified": "2026-08-27",
   "isPartOf": {
     "@type": "WebSite",
     "name": "AvoLens",
@@ -52,7 +52,7 @@
 <main class="wrap">
 
 <h1>Privacy Policy</h1>
-<p class="meta">Effective 20 August 2026 · Last updated 20 August 2026 · Applies to the AvoLens
+<p class="meta">Effective 27 August 2026 · Last updated 27 August 2026 · Applies to the AvoLens
 mobile app (<code>app.avolens.mobile</code>) and this website.</p>
 
 <p class="lede">AvoLens is built local-first. The app works fully offline with your data on
@@ -95,7 +95,7 @@ complete list of data that can be transmitted off your device, and what triggers
     <tr>
       <td>Email address and display name</td>
       <td>Only if you create an account</td>
-      <td>AWS Cognito (auth)</td>
+      <td>Supabase Auth</td>
       <td>Until you delete the account</td>
     </tr>
     <tr>
@@ -117,15 +117,9 @@ complete list of data that can be transmitted off your device, and what triggers
       <td><strong>No.</strong> Transient — processed and discarded, not written to any database or bucket</td>
     </tr>
     <tr>
-      <td>Voice transcript text</td>
-      <td>When you use voice logging</td>
-      <td>Our server, then the AI provider. Speech-to-text itself runs on your device.</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>AI Coach messages</td>
-      <td>When you use the AI Coach</td>
-      <td>Our server, then the AI provider. Includes the day’s log and goals so answers are specific to you.</td>
+      <td>Text inputs (Voice transcripts, ingredient lookups, coach messages, meal plan and recipe requests)</td>
+      <td>When you use voice logging, ingredient lookup, or Avo AI</td>
+      <td>Our server, then the AI provider. Coach/plan requests include your day’s log and goals so answers are specific to you. Speech-to-text runs on your device.</td>
       <td>No</td>
     </tr>
     <tr>
@@ -194,7 +188,7 @@ account.</p>
 
 <h2 id="ai">4. AI processing of your photos and text</h2>
 
-<p>Photo scanning, nutrition-label scanning, voice logging, the AI Coach, Custom Meal Plans and Saved Recipes send data to our
+<p>Photo scanning, nutrition-label scanning, voice logging, AI ingredient lookup, and Avo AI (Coach, Custom Meal Plans, and Saved Recipes) send data to our
 server, which forwards it to <strong>Google</strong> (the Gemini API) for analysis and
 returns the result to your app.</p>
 <ul>
@@ -236,7 +230,7 @@ providers, each processing data only on our instructions:</p>
 <table>
   <thead><tr><th>Provider</th><th>What it handles</th><th>Notes</th></tr></thead>
   <tbody>
-    <tr><td>AWS (Amazon Web Services)</td><td>Accounts, profile sync, progress photos, usage counters</td><td>Encrypted in transit (HTTPS) and at rest</td></tr>
+    <tr><td>Supabase</td><td>Accounts, profile sync, progress photos, usage counters</td><td>Encrypted in transit (HTTPS) and at rest</td></tr>
     <tr><td>Google (Gemini API)</td><td>AI analysis of meal photos, labels, voice text, coach messages, meal plans and recipes</td><td>Transient processing; not stored by us; not used for model training</td></tr>
     <tr><td>RevenueCat</td><td>Subscription status</td><td>Only if you subscribe</td></tr>
     <tr><td>Google Play / Apple</td><td>Payment processing</td><td>We never see your card details</td></tr>
