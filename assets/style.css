@@ -18,21 +18,7 @@
   --water: #4da8f0;
   --radius: 14px;
   --maxw: 720px;
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e0e12;
-    --surface: #16161c;
-    --surface2: #202028;
-    --border: #282832;
-    --ink: #ffffff;
-    --muted: #a9a9ae;
-    --faint: #8a8a8f;
-    --accent: #ffffff;
-    --accent-ink: #0e0e12;
-  }
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
